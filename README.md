@@ -72,6 +72,7 @@ Boss 盲注会带特殊限制（如禁止重复牌型、削弱特定花色、削
 .
 ├── index.html                  # 单页骨架 + 内联 SVG 符号表
 ├── assets/style.css            # 全部样式：主题变量、卡片、响应式断点
+├── assets/favicon.svg          # 站点图标：深底 + 斜置扑克牌 + 红心
 ├── js/
 │   ├── main.js                 # 入口：创建 game 并挂载 UI
 │   ├── game.js                 # 状态机：盲注/商店/结算/存档

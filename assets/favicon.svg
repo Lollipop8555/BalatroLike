@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="BalatroLike">
+  <title>BalatroLike</title>
+  <rect width="64" height="64" rx="15" fill="#0f1b17"/>
+  <g transform="rotate(-10 32 32)">
+    <rect x="13" y="6" width="38" height="52" rx="5.5" fill="#f7f2e8" stroke="#f2c45a" stroke-width="2.4"/>
+    <path d="M32 46C20.5 38 18.2 30.4 22.4 25.8C26.4 21.6 32 25 32 29.4C32 25 37.6 21.6 41.6 25.8C45.8 30.4 43.5 38 32 46Z" fill="#d94a4a"/>
+  </g>
+</svg>
