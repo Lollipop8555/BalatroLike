@@ -1,0 +1,46 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main, master]
+  workflow_dispatch:
+
+# 只使用 GitHub 官方 action，不引入任何第三方构建依赖
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  verify:
+    name: Verify sources
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: 语法检查（Node 内置，无依赖）
+        run: |
+          set -e
+          for f in js/*.js; do node --check "$f"; done
+      - name: 引用完整性检查
+        run: python3 tools/check_site.py
+
+  deploy:
+    name: Deploy
+    needs: verify
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          # 纯静态站点，直接上传仓库根目录；.nojekyll 已存在
+          path: .
+      - id: deployment
+        uses: actions/deploy-pages@v4
