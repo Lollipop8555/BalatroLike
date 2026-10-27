@@ -1,0 +1,28 @@
+{
+  "rarity": "rare",
+  "appearanceRate": 0.05,
+  "count": 20,
+  "source": "https://balatrowiki.org/w/Rare_Jokers",
+  "jokers": [
+    {"id":"dna","name":"DNA","zh":"DNA","cost":8,"effect":"本回合第一手仅 1 张牌时，复制该牌并加入牌组与手牌","unlock":"unknown"},
+    {"id":"vagabond","name":"Vagabond","zh":"流浪者","cost":8,"effect":"出牌时金钱不超过 $4 则生成 1 张塔罗牌","unlock":"unknown"},
+    {"id":"baron","name":"Baron","zh":"男爵","cost":8,"effect":"手中每张 K x1.5 Mult","unlock":"unknown"},
+    {"id":"obelisk","name":"Obelisk","zh":"方尖碑","cost":8,"effect":"每连续打出非最常用牌型 x0.2 Mult","unlock":"unknown"},
+    {"id":"baseball_card","name":"Baseball Card","zh":"棒球卡","cost":8,"effect":"每张罕见小丑 x1.5 Mult","unlock":"unknown"},
+    {"id":"ancient_joker","name":"Ancient Joker","zh":"远古小丑","cost":8,"effect":"每张指定花色的计分牌 x1.5 Mult（每回合变化）","unlock":"unknown"},
+    {"id":"campfire","name":"Campfire","zh":"营火","cost":9,"effect":"每售出 1 张牌 x0.25 Mult；击败 Boss 时重置","unlock":"unknown"},
+    {"id":"blueprint","name":"Blueprint","zh":"蓝图","cost":10,"effect":"复制右侧小丑的能力","unlock":"赢下一局"},
+    {"id":"wee_joker","name":"Wee Joker","zh":"小不点","cost":8,"effect":"每张计分的 2 +8 Chips（累积）","unlock":"18 回合内通关"},
+    {"id":"hit_the_road","name":"Hit the Road","zh":"上路","cost":8,"effect":"本回合每弃 1 张 J x0.5 Mult（每回合重置）","unlock":"一次弃掉 5 张 J"},
+    {"id":"the_duo","name":"The Duo","zh":"双人组","cost":8,"effect":"牌型含对子时 x2 Mult","unlock":"不打出对子通关"},
+    {"id":"the_trio","name":"The Trio","zh":"三人组","cost":8,"effect":"牌型含三条时 x3 Mult","unlock":"不打出三条通关"},
+    {"id":"the_family","name":"The Family","zh":"家族","cost":8,"effect":"牌型含四条时 x4 Mult","unlock":"不打出四条通关"},
+    {"id":"the_order","name":"The Order","zh":"秩序","cost":8,"effect":"牌型含顺子时 x3 Mult","unlock":"不打出顺子通关"},
+    {"id":"the_tribe","name":"The Tribe","zh":"部族","cost":8,"effect":"牌型含同花时 x2 Mult","unlock":"不打出同花通关"},
+    {"id":"stuntman","name":"Stuntman","zh":"特技演员","cost":7,"effect":"+250 Chips，手牌上限 -2","unlock":"单手至少 1 亿 Chips"},
+    {"id":"invisible_joker","name":"Invisible Joker","zh":"隐形小丑","cost":8,"effect":"经过 2 回合后可出售，复制 1 张随机小丑（去除 Negative）","unlock":"小丑数从未超过 4 张通关"},
+    {"id":"brainstorm","name":"Brainstorm","zh":"头脑风暴","cost":10,"effect":"复制最左侧小丑的能力","unlock":"弃掉皇家同花顺"},
+    {"id":"drivers_license","name":"Driver's License","zh":"驾照","cost":7,"effect":"牌组中至少 16 张强化牌时 x3 Mult","unlock":"强化 16 张牌"},
+    {"id":"burnt_joker","name":"Burnt Joker","zh":"烧焦小丑","cost":8,"effect":"每回合升级第一手弃掉的牌型","unlock":"售出 50 张牌"}
+  ]
+}

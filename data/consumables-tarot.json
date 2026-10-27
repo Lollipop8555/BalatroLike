@@ -1,0 +1,30 @@
+{
+  "type": "tarot",
+  "count": 22,
+  "cost": 3,
+  "source": "https://balatrowiki.org/w/Tarot_cards",
+  "cards": [
+    {"id":"the_fool","name":"The Fool","zh":"愚者","targets":0,"effect":"创建本局最后使用过的塔罗或星球牌（不含 The Fool 自身）"},
+    {"id":"the_magician","name":"The Magician","zh":"魔术师","targets":2,"effect":"将最多 2 张选中牌强化为 Lucky"},
+    {"id":"the_high_priestess","name":"The High Priestess","zh":"女祭司","targets":0,"effect":"创建最多 2 张随机星球牌"},
+    {"id":"the_empress","name":"The Empress","zh":"皇后","targets":2,"effect":"将最多 2 张选中牌强化为 Mult"},
+    {"id":"the_emperor","name":"The Emperor","zh":"皇帝","targets":0,"effect":"创建最多 2 张随机塔罗牌"},
+    {"id":"the_hierophant","name":"The Hierophant","zh":"教皇","targets":2,"effect":"将最多 2 张选中牌强化为 Bonus"},
+    {"id":"the_lovers","name":"The Lovers","zh":"恋人","targets":1,"effect":"将 1 张选中牌强化为 Wild"},
+    {"id":"the_chariot","name":"The Chariot","zh":"战车","targets":1,"effect":"将 1 张选中牌强化为 Steel"},
+    {"id":"justice","name":"Justice","zh":"正义","targets":1,"effect":"将 1 张选中牌强化为 Glass"},
+    {"id":"the_hermit","name":"The Hermit","zh":"隐者","targets":0,"effect":"金钱翻倍（上限 $20）"},
+    {"id":"the_wheel_of_fortune","name":"The Wheel of Fortune","zh":"命运之轮","targets":0,"effect":"1/4 概率给随机 1 张 Joker 添加 Foil/Holographic/Polychrome"},
+    {"id":"strength","name":"Strength","zh":"力量","targets":2,"effect":"将最多 2 张选中牌的点数 +1"},
+    {"id":"the_hanged_man","name":"The Hanged Man","zh":"倒吊人","targets":2,"effect":"摧毁最多 2 张选中牌"},
+    {"id":"death","name":"Death","zh":"死神","targets":2,"effect":"将左侧选中牌变为右侧选中牌的复制"},
+    {"id":"temperance","name":"Temperance","zh":"节制","targets":0,"effect":"获得所有 Joker 的总售价（上限 $50）"},
+    {"id":"the_devil","name":"The Devil","zh":"恶魔","targets":1,"effect":"将 1 张选中牌强化为 Gold"},
+    {"id":"the_tower","name":"The Tower","zh":"塔","targets":1,"effect":"将 1 张选中牌强化为 Stone"},
+    {"id":"the_star","name":"The Star","zh":"星星","targets":3,"effect":"将最多 3 张选中牌转为方块"},
+    {"id":"the_moon","name":"The Moon","zh":"月亮","targets":3,"effect":"将最多 3 张选中牌转为梅花"},
+    {"id":"the_sun","name":"The Sun","zh":"太阳","targets":3,"effect":"将最多 3 张选中牌转为红心"},
+    {"id":"judgement","name":"Judgement","zh":"审判","targets":0,"effect":"创建 1 张随机 Joker"},
+    {"id":"the_world","name":"The World","zh":"世界","targets":3,"effect":"将最多 3 张选中牌转为黑桃"}
+  ]
+}

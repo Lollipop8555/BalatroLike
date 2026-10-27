@@ -1,0 +1,33 @@
+{
+  "version": "1.0.1f",
+  "source": "https://balatrowiki.org/w/Poker_hands",
+  "updated": "2026-10-27",
+  "notes": "chips/mult 为 1 级基础值；升级公式 chips = base + (level-1)*chipsGain，mult = base + (level-1)*multGain；等级无上限。",
+  "hands": [
+    { "id": "high_card",       "name": "High Card",       "zh": "高牌",       "chips": 5,   "mult": 1,  "chipsGain": 10, "multGain": 1, "planet": "Pluto",   "secret": false, "priority": 1 },
+    { "id": "pair",            "name": "Pair",            "zh": "对子",       "chips": 10,  "mult": 2,  "chipsGain": 15, "multGain": 1, "planet": "Mercury", "secret": false, "priority": 2 },
+    { "id": "two_pair",        "name": "Two Pair",        "zh": "两对",       "chips": 20,  "mult": 2,  "chipsGain": 20, "multGain": 1, "planet": "Uranus",  "secret": false, "priority": 3 },
+    { "id": "three_of_a_kind", "name": "Three of a Kind", "zh": "三条",       "chips": 30,  "mult": 3,  "chipsGain": 20, "multGain": 2, "planet": "Venus",   "secret": false, "priority": 4 },
+    { "id": "straight",        "name": "Straight",        "zh": "顺子",       "chips": 30,  "mult": 4,  "chipsGain": 30, "multGain": 3, "planet": "Saturn",  "secret": false, "priority": 6 },
+    { "id": "flush",           "name": "Flush",           "zh": "同花",       "chips": 35,  "mult": 4,  "chipsGain": 15, "multGain": 2, "planet": "Jupiter", "secret": false, "priority": 7 },
+    { "id": "full_house",      "name": "Full House",      "zh": "葫芦",       "chips": 40,  "mult": 4,  "chipsGain": 25, "multGain": 2, "planet": "Earth",   "secret": false, "priority": 8 },
+    { "id": "four_of_a_kind",  "name": "Four of a Kind",  "zh": "四条",       "chips": 60,  "mult": 7,  "chipsGain": 30, "multGain": 3, "planet": "Mars",    "secret": false, "priority": 9 },
+    { "id": "straight_flush",  "name": "Straight Flush",  "zh": "同花顺",     "chips": 100, "mult": 8,  "chipsGain": 40, "multGain": 4, "planet": "Neptune", "secret": false, "priority": 10 },
+    { "id": "royal_flush",     "name": "Royal Flush",     "zh": "皇家同花顺", "chips": 100, "mult": 8,  "chipsGain": 40, "multGain": 4, "planet": "Neptune", "secret": false, "priority": 10 },
+    { "id": "five_of_a_kind",  "name": "Five of a Kind",  "zh": "五条",       "chips": 120, "mult": 12, "chipsGain": 35, "multGain": 3, "planet": "Planet X", "secret": true, "priority": 11 },
+    { "id": "flush_house",     "name": "Flush House",     "zh": "同花葫芦",   "chips": 140, "mult": 14, "chipsGain": 40, "multGain": 4, "planet": "Ceres",   "secret": true, "priority": 12 },
+    { "id": "flush_five",      "name": "Flush Five",      "zh": "同花五条",   "chips": 160, "mult": 16, "chipsGain": 50, "multGain": 3, "planet": "Eris",    "secret": true, "priority": 13 }
+  ],
+  "cardChips": {
+    "2": 2, "3": 3, "4": 4, "5": 5, "6": 6, "7": 7, "8": 8, "9": 9, "10": 10,
+    "J": 10, "Q": 10, "K": 10, "A": 11
+  },
+  "scoringOrder": [
+    "resolve_hand_type",
+    "apply_hand_base",
+    "per_scored_card: card_chips -> enhancement -> edition -> seal -> on_scored_jokers",
+    "held_in_hand_effects",
+    "independent_jokers_left_to_right",
+    "multiply"
+  ]
+}

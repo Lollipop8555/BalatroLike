@@ -1,0 +1,36 @@
+{
+  "source": "https://balatrowiki.org/w/Decks",
+  "decks": [
+    {"id":"red","name":"Red Deck","zh":"红牌组","effect":"每回合 +1 弃牌","unlock":"initial"},
+    {"id":"blue","name":"Blue Deck","zh":"蓝牌组","effect":"每回合 +1 出牌","unlock":"发现 20 项收藏"},
+    {"id":"yellow","name":"Yellow Deck","zh":"黄牌组","effect":"开局 +$10","unlock":"发现 50 项收藏"},
+    {"id":"green","name":"Green Deck","zh":"绿牌组","effect":"每剩余出牌 $2、每剩余弃牌 $1；无利息","unlock":"发现 75 项收藏"},
+    {"id":"black","name":"Black Deck","zh":"黑牌组","effect":"+1 小丑槽；每回合 -1 出牌","unlock":"发现 100 项收藏"},
+    {"id":"magic","name":"Magic Deck","zh":"魔法牌组","effect":"开局 Crystal Ball 代金券 + 2 张 The Fool；+1 消耗品槽","unlock":"红牌组通关"},
+    {"id":"nebula","name":"Nebula Deck","zh":"星云牌组","effect":"开局 Telescope 代金券；-1 消耗品槽","unlock":"蓝牌组通关"},
+    {"id":"ghost","name":"Ghost Deck","zh":"幽灵牌组","effect":"幻影牌可出现在商店；开局 1 张 Hex","unlock":"黄牌组通关"},
+    {"id":"abandoned","name":"Abandoned Deck","zh":"废弃牌组","effect":"牌组没有人头牌（40 张）","unlock":"绿牌组通关"},
+    {"id":"checkered","name":"Checkered Deck","zh":"棋盘牌组","effect":"26 黑桃 + 26 红心","unlock":"黑牌组通关"},
+    {"id":"zodiac","name":"Zodiac Deck","zh":"黄道牌组","effect":"开局 Tarot Merchant + Planet Merchant + Overstock","unlock":"任意牌组 Red Stake 以上通关"},
+    {"id":"painted","name":"Painted Deck","zh":"彩绘牌组","effect":"手牌上限 +2；-1 小丑槽","unlock":"任意牌组 Green Stake 以上通关"},
+    {"id":"anaglyph","name":"Anaglyph Deck","zh":"立体牌组","effect":"每击败 Boss 获得 1 个 Double Tag","unlock":"任意牌组 Black Stake 以上通关"},
+    {"id":"plasma","name":"Plasma Deck","zh":"等离子牌组","effect":"计分时平衡 Chips 与 Mult；盲注基础值 x2","unlock":"任意牌组 Blue Stake 以上通关","special":"score = ((chips + mult) / 2) ^ 2"},
+    {"id":"erratic","name":"Erratic Deck","zh":"古怪牌组","effect":"所有牌的点数与花色随机化","unlock":"任意牌组 Orange Stake 以上通关"}
+  ],
+  "stakes": [
+    {"level":1,"id":"white","name":"White Stake","zh":"白注","effect":null},
+    {"level":2,"id":"red","name":"Red Stake","zh":"红注","effect":"Small Blind 不给钱"},
+    {"level":3,"id":"green","name":"Green Stake","zh":"绿注","effect":"每个 Ante 分数增长更快"},
+    {"level":4,"id":"black","name":"Black Stake","zh":"黑注","effect":"商店可出现 Eternal 小丑（不可出售/摧毁）"},
+    {"level":5,"id":"blue","name":"Blue Stake","zh":"蓝注","effect":"-1 弃牌"},
+    {"level":6,"id":"purple","name":"Purple Stake","zh":"紫注","effect":"分数增长更快（再叠一层）"},
+    {"level":7,"id":"orange","name":"Orange Stake","zh":"橙注","effect":"商店可出现 Perishable 小丑（5 回合后减益）"},
+    {"level":8,"id":"gold","name":"Gold Stake","zh":"金注","effect":"商店可出现 Rental 小丑（每回合 -$3）"}
+  ],
+  "stickers": [
+    {"id":"eternal","name":"Eternal","zh":"永恒","effect":"无法出售或摧毁","rate":0.30,"from":"Black Stake"},
+    {"id":"perishable","name":"Perishable","zh":"易腐","effect":"5 回合后被减益","rate":0.30,"from":"Orange Stake","excludes":["eternal"]},
+    {"id":"rental","name":"Rental","zh":"租赁","effect":"每回合 -$3，买入价固定 $1","rate":0.30,"from":"Gold Stake"},
+    {"id":"negative","name":"Negative","zh":"负片","effect":"+1 槽位","rate":0.003,"from":"base"}
+  ]
+}

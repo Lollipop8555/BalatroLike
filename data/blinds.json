@@ -1,0 +1,47 @@
+{
+  "source": "https://balatrowiki.org/w/Blinds_and_Antes",
+  "updated": "2026-10-27",
+  "anteRequirements": {
+    "unit": "chips needed for Boss Blind; small = x1.0, big = x1.5 (rounded), boss = x2.0",
+    "normal":  [300, 800, 2000, 5000, 11000, 20000, 35000, 50000],
+    "green":   [300, 900, 2600, 8000, 20000, 36000, 60000, 100000],
+    "purple":  [300, 1000, 3200, 9000, 25000, 60000, 110000, 200000],
+    "endlessNote": "Ante 9+ 使用公式 base8 * (1.6 + 0.75*(a-8)/(1+0.2*(a-8)))^(a-8)，四舍五入到 2 位有效数字",
+    "endless": {"9":110000,"10":560000,"11":7200000,"12":300000000,"13":"4.7e10","14":"2.9e13","15":"7.7e16","16":"8.6e20","20":"4.3e43","30":"2.1e149","39":"4.8e309 (overflow)"}
+  },
+  "rewards": { "small": 3, "big": 4, "boss": 5, "showdown": 8 },
+  "blinds": [
+    {"id":"small_blind","name":"Small Blind","zh":"小盲","mult":1.0,"minAnte":0,"reward":3,"effect":null,"matador":false,"skippable":true},
+    {"id":"big_blind","name":"Big Blind","zh":"大盲","mult":1.5,"minAnte":0,"reward":4,"effect":null,"matador":false,"skippable":true},
+
+    {"id":"the_hook","name":"The Hook","zh":"钩子","mult":2.0,"minAnte":1,"effect":"每打出 1 手牌，随机弃掉 2 张手牌","matador":false,"skippable":false},
+    {"id":"the_ox","name":"The Ox","zh":"公牛","mult":2.0,"minAnte":1,"effect":"打出最常用牌型时，金钱归 $0","matador":true,"skippable":false},
+    {"id":"the_house","name":"The House","zh":"房屋","mult":2.0,"minAnte":1,"effect":"第 1 手牌全部背面朝上","matador":false,"skippable":false},
+    {"id":"the_wall","name":"The Wall","zh":"高墙","mult":4.0,"minAnte":1,"effect":"超大盲注（分数翻倍）","matador":false,"skippable":false},
+    {"id":"the_wheel","name":"The Wheel","zh":"车轮","mult":2.0,"minAnte":1,"effect":"1/7 的牌背面朝上","matador":false,"skippable":false},
+    {"id":"the_arm","name":"The Arm","zh":"手臂","mult":2.0,"minAnte":1,"effect":"打出牌型的等级 -1","matador":true,"skippable":false},
+    {"id":"the_club","name":"The Club","zh":"棍棒","mult":2.0,"minAnte":1,"effect":"所有梅花牌被减益","matador":true,"skippable":false},
+    {"id":"the_fish","name":"The Fish","zh":"鱼","mult":2.0,"minAnte":1,"effect":"每手牌后抽到的牌背面朝上","matador":false,"skippable":false},
+    {"id":"the_psychic","name":"The Psychic","zh":"通灵者","mult":2.0,"minAnte":1,"effect":"必须打出 5 张牌","matador":true,"skippable":false},
+    {"id":"the_goad","name":"The Goad","zh":"刺棒","mult":2.0,"minAnte":1,"effect":"所有黑桃牌被减益","matador":true,"skippable":false},
+    {"id":"the_water","name":"The Water","zh":"水","mult":2.0,"minAnte":1,"effect":"开局 0 次弃牌","matador":false,"skippable":false},
+    {"id":"the_window","name":"The Window","zh":"窗户","mult":2.0,"minAnte":1,"effect":"所有方块牌被减益","matador":true,"skippable":false},
+    {"id":"the_manacle","name":"The Manacle","zh":"镣铐","mult":2.0,"minAnte":1,"effect":"手牌上限 -1","matador":false,"skippable":false},
+    {"id":"the_eye","name":"The Eye","zh":"眼睛","mult":2.0,"minAnte":2,"effect":"本回合不能重复牌型","matador":true,"skippable":false},
+    {"id":"the_mouth","name":"The Mouth","zh":"嘴","mult":2.0,"minAnte":2,"effect":"本回合只能打 1 种牌型","matador":true,"skippable":false},
+    {"id":"the_plant","name":"The Plant","zh":"植物","mult":2.0,"minAnte":4,"effect":"所有人头牌被减益","matador":true,"skippable":false},
+    {"id":"the_serpent","name":"The Serpent","zh":"蛇","mult":2.0,"minAnte":5,"effect":"每次出牌或弃牌后只抽 3 张","matador":false,"skippable":false},
+    {"id":"the_pillar","name":"The Pillar","zh":"柱子","mult":2.0,"minAnte":1,"effect":"本 Ante 已打出过的牌被减益","matador":true,"skippable":false},
+    {"id":"the_needle","name":"The Needle","zh":"针","mult":1.0,"minAnte":1,"effect":"本回合只能出 1 手牌","matador":false,"skippable":false},
+    {"id":"the_head","name":"The Head","zh":"头","mult":2.0,"minAnte":1,"effect":"所有红心牌被减益","matador":true,"skippable":false},
+    {"id":"the_tooth","name":"The Tooth","zh":"牙齿","mult":2.0,"minAnte":3,"effect":"每打出 1 张牌 -$1","matador":false,"skippable":false},
+    {"id":"the_flint","name":"The Flint","zh":"燧石","mult":2.0,"minAnte":2,"effect":"基础 Chips 与 Mult 减半","matador":true,"skippable":false},
+    {"id":"the_mark","name":"The Mark","zh":"印记","mult":2.0,"minAnte":2,"effect":"所有人头牌背面朝上","matador":false,"skippable":false},
+
+    {"id":"amber_acorn","name":"Amber Acorn","zh":"琥珀橡子","mult":2.0,"minAnte":8,"reward":8,"effect":"翻转并打乱所有 Joker","matador":false,"showdown":true},
+    {"id":"verdant_leaf","name":"Verdant Leaf","zh":"翠叶","mult":2.0,"minAnte":8,"reward":8,"effect":"所有牌被减益，直到售出 1 张 Joker","matador":true,"showdown":true},
+    {"id":"violet_vessel","name":"Violet Vessel","zh":"紫器","mult":6.0,"minAnte":8,"reward":8,"effect":"超大盲注","matador":false,"showdown":true},
+    {"id":"crimson_heart","name":"Crimson Heart","zh":"绯红之心","mult":2.0,"minAnte":8,"reward":8,"effect":"每手牌随机禁用 1 张 Joker","matador":false,"showdown":true},
+    {"id":"cerulean_bell","name":"Cerulean Bell","zh":"蔚蓝之钟","mult":2.0,"minAnte":8,"reward":8,"effect":"强制始终选中 1 张牌","matador":false,"showdown":true}
+  ]
+}

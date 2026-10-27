@@ -1,0 +1,15 @@
+{
+  "rarity": "legendary",
+  "appearanceRate": 0.0,
+  "count": 5,
+  "source": "https://balatrowiki.org/w/Legendary_Jokers",
+  "obtain": "仅通过幻影牌 The Soul 获得，商店无法购买",
+  "codeCost": 20,
+  "jokers": [
+    {"id":"canio","name":"Canio","zh":"卡尼奥","cost":20,"effect":"每有 1 张人头牌被摧毁 x1 Mult","unlock":"?????"},
+    {"id":"triboulet","name":"Triboulet","zh":"特里布莱","cost":20,"effect":"每张计分的 K 与 Q 各 x2 Mult","unlock":"?????"},
+    {"id":"yorick","name":"Yorick","zh":"约里克","cost":20,"effect":"每弃掉 23 张牌 x1 Mult","unlock":"?????"},
+    {"id":"chicot","name":"Chicot","zh":"希科","cost":20,"effect":"禁用所有 Boss 盲注效果","unlock":"?????"},
+    {"id":"perkeo","name":"Perkeo","zh":"佩尔克奥","cost":20,"effect":"商店结束时，复制 1 张随机消耗牌的 Negative 版本","unlock":"?????"}
+  ]
+}

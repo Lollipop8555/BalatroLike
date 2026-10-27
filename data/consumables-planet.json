@@ -1,0 +1,21 @@
+{
+  "type": "planet",
+  "count": 12,
+  "cost": 3,
+  "source": "https://balatrowiki.org/w/Planet_Cards",
+  "notes": "使用后对应牌型等级 +1；等级无上限；仅本局有效。secret 牌需本局打出过对应牌型后才会出现。",
+  "cards": [
+    {"id":"pluto","name":"Pluto","zh":"冥王星","hand":"high_card","chipsGain":10,"multGain":1,"secret":false},
+    {"id":"mercury","name":"Mercury","zh":"水星","hand":"pair","chipsGain":15,"multGain":1,"secret":false},
+    {"id":"uranus","name":"Uranus","zh":"天王星","hand":"two_pair","chipsGain":20,"multGain":1,"secret":false},
+    {"id":"venus","name":"Venus","zh":"金星","hand":"three_of_a_kind","chipsGain":20,"multGain":2,"secret":false},
+    {"id":"saturn","name":"Saturn","zh":"土星","hand":"straight","chipsGain":30,"multGain":3,"secret":false},
+    {"id":"jupiter","name":"Jupiter","zh":"木星","hand":"flush","chipsGain":15,"multGain":2,"secret":false},
+    {"id":"earth","name":"Earth","zh":"地球","hand":"full_house","chipsGain":25,"multGain":2,"secret":false},
+    {"id":"mars","name":"Mars","zh":"火星","hand":"four_of_a_kind","chipsGain":30,"multGain":3,"secret":false},
+    {"id":"neptune","name":"Neptune","zh":"海王星","hand":"straight_flush","chipsGain":40,"multGain":4,"secret":false,"note":"皇家同花顺共用"},
+    {"id":"planet_x","name":"Planet X","zh":"X 行星","hand":"five_of_a_kind","chipsGain":35,"multGain":3,"secret":true},
+    {"id":"ceres","name":"Ceres","zh":"谷神星","hand":"flush_house","chipsGain":40,"multGain":4,"secret":true},
+    {"id":"eris","name":"Eris","zh":"阋神星","hand":"flush_five","chipsGain":50,"multGain":3,"secret":true}
+  ]
+}

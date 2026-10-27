@@ -1,0 +1,27 @@
+{
+  "type": "spectral",
+  "count": 18,
+  "cost": 4,
+  "source": "https://balatrowiki.org/w/Spectral_Cards",
+  "notes": "全部初始解锁；The Soul 与 Black Hole 仅能在补充包中以每张 0.3% 出现。",
+  "cards": [
+    {"id":"familiar","name":"Familiar","zh":"使魔","effect":"摧毁手中 1 张随机牌，加入 3 张强化人头牌","drawback":"随机 1 张牌"},
+    {"id":"grim","name":"Grim","zh":"冷酷","effect":"摧毁手中 1 张随机牌，加入 2 张强化 A","drawback":"随机 1 张牌"},
+    {"id":"incantation","name":"Incantation","zh":"咒语","effect":"摧毁手中 1 张随机牌，加入 4 张强化数字牌","drawback":"随机 1 张牌"},
+    {"id":"talisman","name":"Talisman","zh":"护符","effect":"给 1 张选中牌添加 Gold Seal","drawback":null},
+    {"id":"aura","name":"Aura","zh":"光环","effect":"给 1 张选中牌添加 Foil/Holographic/Polychrome","drawback":null},
+    {"id":"wraith","name":"Wraith","zh":"幽灵","effect":"创建 1 张随机稀有小丑","drawback":"金钱设为 $0"},
+    {"id":"sigil","name":"Sigil","zh":"符印","effect":"手中所有牌转为同一随机花色","drawback":null},
+    {"id":"ouija","name":"Ouija","zh":"通灵板","effect":"手中所有牌转为同一随机点数","drawback":"手牌上限 -1"},
+    {"id":"ectoplasm","name":"Ectoplasm","zh":"灵质","effect":"给随机 1 张 Joker 添加 Negative","drawback":"手牌上限 -1"},
+    {"id":"immolate","name":"Immolate","zh":"献祭","effect":"摧毁手中 5 张随机牌","drawback":"获得 $20"},
+    {"id":"ankh","name":"Ankh","zh":"安卡","effect":"复制 1 张随机小丑，摧毁其他所有小丑","drawback":"失去其他小丑"},
+    {"id":"deja_vu","name":"Deja Vu","zh":"既视感","effect":"给 1 张选中牌添加 Red Seal","drawback":null},
+    {"id":"hex","name":"Hex","zh":"诅咒","effect":"给随机 1 张小丑添加 Polychrome，摧毁其他所有小丑","drawback":"失去其他小丑"},
+    {"id":"trance","name":"Trance","zh":"恍惚","effect":"给 1 张选中牌添加 Blue Seal","drawback":null},
+    {"id":"medium","name":"Medium","zh":"灵媒","effect":"给 1 张选中牌添加 Purple Seal","drawback":null},
+    {"id":"cryptid","name":"Cryptid","zh":"神秘生物","effect":"创建 1 张选中牌的 2 份复制","drawback":null},
+    {"id":"the_soul","name":"The Soul","zh":"灵魂","effect":"创建 1 张传奇小丑","drawback":"0.3% 包内出现率"},
+    {"id":"black_hole","name":"Black Hole","zh":"黑洞","effect":"所有牌型 +1 级","drawback":"0.3% 包内出现率"}
+  ]
+}
